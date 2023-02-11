@@ -40,7 +40,7 @@ const favouritesChecker = (id) =>{
                      </div>
                    </div> 
                 ))
-                ):(<h1>Ypu don't have any favourite books yet!!! </h1>
+                ):(<h1>You don't have any favourite books yet!!! </h1>
             )}
             </div>
           

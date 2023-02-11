@@ -7,7 +7,9 @@ const Navbar =() => {
 
         <div className='navbar'>
             <div>
+            <Link to ="book-list">
                 <h1>BOOKLY</h1>
+                </Link>
             </div>
             <div> 
                 <Link to ="Favourites">
