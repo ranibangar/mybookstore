@@ -6,7 +6,10 @@ import BookDetails from './component/BookDetails';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Favourites from './component/Favourites';
+
+
 function App(){
+    
     return(
  <div className='App'>
     <Navbar/>

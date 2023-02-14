@@ -2,8 +2,7 @@ import React,{useEffect, useState} from 'react';
 import "../App";
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { BOOk_URL } from '../API';
-
+import { BOOk_URL } from "../API";
 const BookDetails = () => {
 
   const [ book, setBooks] = useState();
@@ -12,13 +11,13 @@ const BookDetails = () => {
 
 useEffect(()=> {
   axios
-  .get('${BOOk_URL}/${id}')
+  .getBooks('${BOOk_URL}/${id}')
   .then((res) => {
      setBooks(res.data);
   }).catch(err=>console.log(err))
 },[id]);
 
-  return <div className='book-details'>
+  return <div classNames='book-details'>
     <div>
       <h2>{book?.title}</h2>
       <img src={book?.image_url} alt="#" />
